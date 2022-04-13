@@ -1,3 +1,5 @@
+# !!! BROKEN COOKIES JAR
+
 # SpoofingTlsFingerprint
 Прокси сервер для обхода TLS Fingerprint
 
