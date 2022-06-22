@@ -3,22 +3,21 @@ module Golang
 go 1.17
 
 require (
-	github.com/Danny-Dasilva/CycleTLS/cycletls v0.0.0-20220327010805-3bf5719977c5
+	github.com/Danny-Dasilva/CycleTLS/cycletls v0.0.0-20220620102923-c84d740b4757
 	github.com/gorilla/mux v1.8.0
 )
 
 require (
-	github.com/Danny-Dasilva/fhttp v0.0.0-20220314084641-e22cf5f0aab0 // indirect
+	github.com/Danny-Dasilva/fhttp v0.0.0-20220524230104-f801520157d6 // indirect
+	github.com/Danny-Dasilva/utls v0.0.0-20220604023528-30cb107b834e // indirect
 	github.com/andybalholm/brotli v1.0.4 // indirect
 )
 
 require (
 	github.com/dsnet/compress v0.0.1
 	github.com/gorilla/websocket v1.5.0 // indirect
-	gitlab.com/yawning/bsaes.git v0.0.0-20190805113838-0a714cd429ec // indirect
-	gitlab.com/yawning/utls.git v0.0.12-1 // indirect
-	golang.org/x/crypto v0.0.0-20220314234724-5d542ad81a58 // indirect
-	golang.org/x/net v0.0.0-20220225172249-27dd8689420f // indirect
-	golang.org/x/sys v0.0.0-20220310020820-b874c991c1a5 // indirect
+	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e // indirect
+	golang.org/x/net v0.0.0-20220621193019-9d032be2e588 // indirect
+	golang.org/x/sys v0.0.0-20220615213510-4f61da869c0c // indirect
 	golang.org/x/text v0.3.7 // indirect
 )
