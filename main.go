@@ -29,8 +29,8 @@ func main() {
 	}
 
 	router := mux.NewRouter()
-	router.HandleFunc("/check-status", CheckStatus).Methods("GET")
-	router.HandleFunc("/handle", Handle).Methods("POST")
+	router.HandleFunc("/status", CheckStatus).Methods("GET")
+	router.HandleFunc("/", Handle).Methods("POST")
 	fmt.Println("The proxy server is running")
 	log.Fatal(http.ListenAndServe(":"+port, router))
 }
@@ -67,6 +67,8 @@ func Handle(responseWriter http.ResponseWriter, request *http.Request) {
 		handleResponse.Error = err.Error()
 		json.NewEncoder(responseWriter).Encode(handleResponse)
 		return
+	} else {
+		fmt.Printf("[%v] %v\n", resp.Status, handleRequest.Url)
 	}
 
 	handleResponse.Success = true
